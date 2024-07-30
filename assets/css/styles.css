@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
 :root {
-    --main-color-one: #fc0841;
-    --secondary-color: #fc0841;
-    --heading-color: #161619;
+    --primary-color: #EA5C1F;
+    --secondary-color: #1098F7;
+    --heading-color: #ffffff;
+    --ascent-color:#0FA3B1;
     --paragraph-color: #828282;
-    --heading-font: 'Montserrat', sans-serif;
+    --heading-font: 'Inter', sans-serif;
     --body-font: 'Open Sans', sans-serif;
  
 }
@@ -13,6 +17,38 @@
     margin: 0;
     padding: 0;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+h1 {
+    font-size: 48px;
+    line-height: 1.0833333333333333; }
+  
+  h2 {
+    font-size: 36px;
+    line-height: 1.4444444444444444; }
+  
+  h3 {
+    font-size: 24px;
+    line-height: 1.0833333333333333; }
+  
+  h4 {
+    font-size: 20px;
+    line-height: 1.2380952380952381; }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--heading-color);
+    font-family: var(--heading-font); }
+  
+  p {
+    color: var(--paragraph-color);
+    font-size: 16px;
+    margin-bottom: 10px; }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    color: var(--paragraph-color); }
 
