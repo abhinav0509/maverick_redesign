@@ -56,3 +56,16 @@ h1 {
     text-decoration: none;
     color: var(--paragraph-color); }
 
+    .primary-btn{
+      color:white;
+      background-color: var(--primary-color);
+      padding: 12px 16px;
+
+    }
+    .secondary-btn{
+      color:white;
+      background-color: #000000;
+      padding: 12px 16px;
+      border: 1px solid var(--primary-color);
+    }
+
