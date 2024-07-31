@@ -67,16 +67,16 @@ h1 {
       padding: 12px 16px;
       border: 1px solid var(--primary-color);
     }
-     .navbar{
-
-     }
+   
     .nav-item > a{
       color: var(--paragraph-color) !important;
     } 
+   
     .navbar-brand > img {
       display: inline-block !important;
-      max-width: 100px;
+      max-width: 120px;
       background-color: #ffffff;
+      padding: 8px 24px;
       
-  }
+    }
 
