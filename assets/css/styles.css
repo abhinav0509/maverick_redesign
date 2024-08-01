@@ -79,4 +79,9 @@ h1 {
       padding: 8px 24px;
       
     }
-
+    #heroVideo{
+      margin-top: 20px;
+      min-width: 100%;
+      min-height: 100%;
+    }
+    
