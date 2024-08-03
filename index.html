@@ -8,6 +8,31 @@
     
     <title>Maverick Softwares</title>
 </head>
+ <style>
+  .company_numbers{
+    color:#fff;
+    font-size: 36px;
+  }
+  .bg{
+  background-color: #1e1f26;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.level{
+  padding: 5rem 0;
+  color: #ffffff;
+  margin: 0!important;
+}
+
+.title{
+  color: inherit;
+  width: 200px;
+  height: 36px;
+}
+ </style>
 <body>
     <!--Header Section Start-->
     <header class="mt-4">
@@ -61,7 +86,9 @@
 
     <!--Hero Section Start-->
      <section class="hero mt-4">
+    
         <div class="container">
+
             <div class="row">
                 <div class="col-sm-12">
                     <div class="hero-text d-flex flex-column justify-content-center align-items-center">
@@ -88,35 +115,47 @@
 
     <!-- Company Counter Section Begin-->
     <section class="company_numbers counters mt-4">
+      <nav class="level">
       <div class="container">
-        <div class="row level">
+        <div class="row">
            <div class="col">
             <p class="text-center">Satisfied Clients</p>
-            <h2 class="text-center counter js-count-up" data-value="100"></h2><span>+</span>
+            <h2 class="text-center counter js-count-up" style="color:#fff !important;" data-value="100"></h2>
            </div>
            <div class="col">
             <p class="text-center">Projects Delivered</p>
-            <h2 class="text-center counter js-count-up" data-value="150"></h2><span>+</span>
+            <h2 class="text-center counter js-count-up" data-value="150"></h2>
            </div>
            <div class="col">
             <p class="text-center">Years of Expereince</p>
-            <h2 class="text-center counter js-count-up" data-value="15"></h2><span>+</span>
+            <h2 class="text-center counter js-count-up" data-value="15"></h2>
            </div>
            <div class="col">
             <p class="text-center">Client Satisfaction</p>
-            <h2 class="text-center counter js-count-up" data-value="100"></h2><span>%</span>
+            <h2 class="text-center counter js-count-up" data-value="100"></h2>
            </div>
         </div>
       </div>
+    </nav>
     </section>
     <!-- Company Counter Section End-->
+    <div class="bg is-size-1"></div>
+    <nav class="level">
+     
+      
+   
+      
+    </nav>
+    
+    
 
     <!--Javascript dependencies-->
     <script src="./assets/js/jquery-v3.7.1.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="assets/js/noframework.waypoints.min.js" type="module"></script>
+    <script src="./assets/js/main.js" type="module"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/countUp.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="./assets/js/countUp.js" type="module"></script>
+    
      
 </body>
 </html>
