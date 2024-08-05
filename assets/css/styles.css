@@ -101,6 +101,38 @@ h1 {
 
     #section-title{
       color:var(--primary-color);
+      margin-top: 64px;
+
+    }
+
+    #section-subtitle{
+      margin-bottom: 64px;
+    }
+
+    .company_numbers{
+      color:#fff;
+      font-size: 36px;
+    }
+
+    #services a {
+      text-decoration: none !important;
+    }
+    #foreground-img{
+      position: absolute;
+      background-color:#fff;
+      z-index: 999;
+      width:430px; 
+      height:600px;
+      border-radius: 16px;
+     
+      
+    }
+     #background-img{
+      background-color:#EA5C1F;
+      width:470px; 
+      height:650px;
+      border-radius: 16px;
+      
     }
 
 

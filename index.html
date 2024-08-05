@@ -9,13 +9,63 @@
     <title>Maverick Softwares</title>
 </head>
  <style>
-  .company_numbers{
-    color:#fff;
-    font-size: 36px;
+  
+  .cs_iconbox.cs_style_3{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    color: #fff;
   }
-
-
-
+  .cs_iconbox.cs_style_3 .cs_iconbox_icon{
+    color: #4f4747;
+    border: 2px solid #4f4747;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .cs_center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.cs_iconbox.cs_style_3 .cs_iconbox_in {
+    margin-right: 30px;
+    max-width: 580px;
+}
+.cs_iconbox.cs_style_3 .cs_iconbox_subtitle {
+    color: #dddddd;
+}
+.cs_hover_tab:hover{
+  .cs_iconbox{
+ 
+    color:#EA5C1F;
+  }
+}
 
  </style>
 <body>
@@ -104,19 +154,19 @@
       
       <div class="container">
         <div class="row">
-           <div class="col-sm-6">
+           <div class="col-sm-6 col-lg-3">
             <p class="text-center">Satisfied Clients</p>
             <h2 class="text-center counter js-count-up" style="color:#fff !important;" data-value="120"></h2>
            </div>
-           <div class="col-sm-6">
+           <div class="col-sm-6 col-lg-3">
             <p class="text-center">Projects Delivered</p>
             <h2 class="text-center counter js-count-up" data-value="150"></h2>
            </div>
-           <div class="col-sm-6">
+           <div class="col-sm-6 col-lg-3">
             <p class="text-center">Years of Expereince</p>
             <h2 class="text-center counter js-count-up" data-value="15"></h2>
            </div>
-           <div class="col-sm-6">
+           <div class="col-sm-6 col-lg-3">
             <p class="text-center">Client Satisfaction</p>
             <h2 class="text-center counter js-count-up" data-value="100"></h2>
            </div>
@@ -134,19 +184,98 @@
            </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-6">
+        <div class="row d-flex justify-content-center">
+          <div class= "col-xl-6 col-lg-12 col-sm-12 col-md-12">
             <div class="service-img">
-              <div id="foreground-img" >
-
+              <div id="background-img">
+                <div id="foreground-img">
+                  
+                </div>
               </div>
-              <div id="background-img" style="background-color:#EA5C1F;  width:400px; height:560px;" >
-                
-              </div>
+             
+            
             </div>
           </div>
-          <div class="col-6">
-            
+          <div class="col-xl-6 col-lg-12 col-sm-12 col-md-12">
+            <div class="row">
+              <div class="col">
+                <div class="cs_hover_tab active">
+                  <a href="service-details.html" class="cs_iconbox cs_style_3">
+                  
+                    <span class="cs_iconbox_icon cs_center">
+                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
+                      </svg>            
+                               
+                    </span>
+                    <div class="cs_iconbox_in">
+                      <h4 class="cs_iconbox_title cs_fs_29">Website Design & Development</h4>
+                      <div class="cs_iconbox_subtitle">Crafting stunning, responsive websites that not only capture your brand’s essence but also convert visitors into loyal customers.</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="cs_hover_tab active">
+                  <a href="service-details.html" class="cs_iconbox cs_style_3">
+                  
+                    <span class="cs_iconbox_icon cs_center">
+                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
+                      </svg>            
+                                
+                    </span>
+                    <div class="cs_iconbox_in">
+                      <h4 class="cs_iconbox_title cs_fs_29">Web Application Development</h4>
+                      <div class="cs_iconbox_subtitle">Designing robust web applications that boost productivity and streamline your business processes with intuitive functionality and top-notch performance.</div>
+                    </div>
+                  </a>
+                </div>  
+                <div class="cs_hover_tab active">
+                  <a href="service-details.html" class="cs_iconbox cs_style_3">
+                  
+                    <span class="cs_iconbox_icon cs_center">
+                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
+                      </svg>            
+                                
+                    </span>
+                    <div class="cs_iconbox_in">
+                      <h4 class="cs_iconbox_title cs_fs_29">Mobile Application Development</h4>
+                      <div class="cs_iconbox_subtitle">Building sleek, user-friendly mobile apps that deliver seamless experiences and keep your audience engaged on the go.Curated perfectly for both IOS and Android platform</div>
+                    </div>
+                  </a>
+                </div>  
+                <div class="cs_hover_tab active">
+                  <a href="service-details.html" class="cs_iconbox cs_style_3">
+                  
+                    <span class="cs_iconbox_icon cs_center">
+                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
+                      </svg>            
+                                
+                    </span>
+                    <div class="cs_iconbox_in">
+                      <h4 class="cs_iconbox_title cs_fs_29">Health Care IT Solutions</h4>
+                      <div class="cs_iconbox_subtitle">Empowering healthcare providers with cutting-edge IT solutions for efficient, secure, and streamlined patient care and management.</div>
+                    </div>
+                  </a>
+                </div>  
+                <div class="cs_hover_tab active">
+                  <a href="service-details.html" class="cs_iconbox cs_style_3">
+                  
+                    <span class="cs_iconbox_icon cs_center">
+                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
+                      </svg>            
+                                
+                    </span>
+                    <div class="cs_iconbox_in">
+                      <h4 class="cs_iconbox_title cs_fs_29">Content Management Systems</h4>
+                      <div class="cs_iconbox_subtitle">Simplifying content management with powerful, easy-to-use systems that allow you to effortlessly control and update your website’s content.</div>
+                    </div>
+                  </a>
+                </div>  
+              </div>
+            </div>
           </div>
         </div>
       </div>
