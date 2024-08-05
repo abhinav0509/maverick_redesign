@@ -68,11 +68,16 @@ h1 {
       border-radius: 10px;
       border: 1px solid var(--primary-color);
     }
+    .secondary-btn:hover{
+      color:white;
+      background-color: var(--primary-color);
+     
+    }
    
     .nav-item > a{
       color: var(--paragraph-color) !important;
     } 
-   
+     
     .navbar-brand > img {
       display: inline-block !important;
       max-width: 120px;
@@ -85,11 +90,30 @@ h1 {
       color: var(--primary-color) !important;
 
     }
+    #hero-subtitle{
+      margin-bottom: 24px;
+
+    }
+    #hero-title{
+      font-size: 68px;
+      margin-bottom: 16px;
+
+    }
+    #hero-text p{
+      line-height: 1.5;
+      
+    }
+    #hero-text{
+     margin-bottom: 64px;
+    }
 
     #heroVideo{
-      margin-top: 20px;
       min-width: 100%;
       min-height: 100%;
+    }
+
+    .company_numbers{
+      margin-bottom: 64px;
     }
 
     .company_numbers  p{
@@ -147,3 +171,9 @@ h1 {
           display: none;
       }
     }
+
+    @media (max-width: 991px) {
+      #hero-title {
+          font-size: 48px;
+      }
+  }
