@@ -79,6 +79,12 @@ h1 {
       padding: 8px 24px;
       
     }
+   
+    .navlink.active{
+      color: var(--primary-color) !important;
+
+    }
+
     #heroVideo{
       margin-top: 20px;
       min-width: 100%;
