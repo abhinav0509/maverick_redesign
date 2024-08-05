@@ -99,6 +99,10 @@ h1 {
       font-size: 3.5rem;
     }
 
+    #section-title{
+      color:var(--primary-color);
+    }
+
 
     @media (max-width: 767.98px) { 
       .main_header_right{
