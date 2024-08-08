@@ -273,11 +273,12 @@ h1 {
   height: 100px;
   position: relative;
  
+ 
 }
 
 .carousel-primary,
 .carousel-secondary {
-  top: 2%;
+  top: -35%;
   left: 100%;
   width: 100%;
   overflow: hidden;
