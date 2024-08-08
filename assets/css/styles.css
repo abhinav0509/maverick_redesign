@@ -12,11 +12,22 @@
     --body-font: 'Inter', sans-serif;
  
 }
+/* *,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  overflow: hidden;
+} */
   
 *{
-    box-sizing: border-box;
     
-}
+  box-sizing: border-box;
+   
+ }
 body{
     background-color: var(--dark-mode-black);
 }
@@ -254,19 +265,24 @@ h1 {
       color: var(--dark-mode-gray)!important;;
     }
 
-    .scroll-container {
+#tech-stack{
+  overflow: hidden;
+}
+
+.scroll-container {
   height: 50vh;
   position: relative;
 }
 
 .carousel-primary,
 .carousel-secondary {
-  top: 5%;
+  top: 2%;
   left: 100%;
   width: 100%;
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
+
 
 }
 
