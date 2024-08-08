@@ -8,10 +8,86 @@
     <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
     
     <title>Maverick Softwares</title>
-</head>
+</head> 
  <style>
+  .scroll-container {
+  height: 50vh;
+  position: relative;
+}
+
+.carousel-primary,
+.carousel-secondary {
+  top: 5%;
+  left: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+
+}
+
+.carousel-primary img {
+  width: 100%;
+  margin-left: 20px;
+  border-radius: 14px;
+}
+
+.carousel-primary {
+  display: flex;
+  justify-content: space-around;
+  animation: scroll-horizontal 20s linear infinite;
+}
+
+.carousel-secondary {
+  animation: scroll-horizontal 20s linear infinite;
+  animation-delay: 10s;
+}
+/* .logo-container{
+  width: 300px;
+  height: 300px;
   
   
+} */
+.logo-container img{
+ width: 150px;
+ height: 100%;
+ border-radius: 4px;
+ padding: 8px;
+ object-fit: contain;
+}
+@keyframes scroll-horizontal {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+.carousel-primary:hover,
+.carousel-primary:hover~.carousel-secondary {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.carousel-secondary:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+
+.scroll-container:hover>.carousel-primary:not(:hover) {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+
+}
 
  </style>
 <body>
@@ -300,6 +376,46 @@
           <h5 id="section-title">Tech Stack</h5>
           <h2 id="section-subtitle">Technology We Command</h2>
         </div>
+      </div>
+      <div class="container">
+        <div class="scroll-container">
+          <div class="carousel-primary">
+            <div class="logo-container">
+              <img src="./assets/img/technology/java.png" alt="html-logo" />
+            </div>
+            <div class="logo-container">
+              <img src="./assets/img/technology/html.png" alt="css-logo" />
+            </div>
+            <div class="logo-container">
+              <img src="./assets/img/technology/javascript.png" alt="javascript-logo" />
+            </div>
+            <div class="logo-container">
+            <img src="./assets/img/technology/react.png" alt="react-logo" />
+            </div>
+            
+          </div>
+          <div class="carousel-primary carousel-secondary">
+            <div class="logo-container">
+              <img src="./assets/img/technology/php.png" alt="php-logo" />
+              </div>
+            <div class="logo-container">
+              <img src="./assets/img/technology/codeigniter.png" alt="ci-logo" />
+              </div>
+              <div class="logo-container">
+                <img src="./assets/img/technology/node.png" alt="node-logo" />
+              </div>
+              <div class="logo-container">
+                <img src="./assets/img/technology/android.png" alt="react-logo" />
+              </div>
+              <div class="logo-container">
+                <img src="./assets/img/technology/mysql.png" alt="react-logo" />
+                </div>
+                <div class="logo-container">
+                  <img src="./assets/img/technology/mongodb.png" alt="react-logo" />
+                  </div>
+          </div>
+        </div>
+      </div>
       </div>
    
     </section>
