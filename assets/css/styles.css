@@ -365,6 +365,78 @@ h1 {
   background-color: #000000;
 }
 
+/* #contact-us{
+  background-color: #000000;
+} */
+contact-bg-img{
+  background-image: url("../img/contactus/darkmodegradient_bg.svg");
+}
+
+  #contact-form-heading{
+    margin-bottom: 13px;
+  }
+
+ #contact-left-title{
+    margin-top: 52px;
+  }
+
+  #contact-left-heading{
+    font-size: 37px;
+      padding: 25px;
+      margin-left: 63px;
+      font-weight: 700;
+  }
+
+  .contact-form-title{
+    margin-bottom: 15px;
+    font-size: 17px;
+  }
+
+
+  .form-control{
+    margin-bottom: 15px;
+    border-radius: 13px;
+
+  }
+
+  #contact-queryfield{
+    margin-bottom: 15px;
+    border-radius: 13px;
+    width: 502px;
+  }
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.error-message {
+  color: red;
+  display: none;
+}
+
+.error-border {
+  border: 1px solid red;
+}
+
+.success-message {
+  color: green;
+  display: none;
+}
+
+#contact-submit-button{
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+#contact-button{
+  width: 145px;
+  height: 48px;
+  border-radius: 15px;
+  border: 1px solid  #EA5C1F;
+  font-size: 17px;
+}
+
+
 #footer{
   background-color: #fff;
  } 
