@@ -365,6 +365,49 @@ h1 {
   background-color: #000000;
 }
 
+#footer{
+  background-color: #fff;
+ } 
+.footer-img {
+  background-image: url(./assets/img/footer/Footer_bg.jpg);
+  padding-top: 60px;
+  background-repeat: no-repeat;
+}
+
+.footer-main {
+  padding: 45px;
+}
+
+.footer-container {
+  margin-bottom: 36px;
+}
+
+.footer-logo img {
+  width: 119px;
+}
+
+.footer-item-title {
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+span {
+  font-weight: 400;
+}
+
+.footer-bottom {
+  margin-top: 32px;
+}
+
+.footer-admin-id{
+  font-weight: 500;
+}
+
     @media (max-width: 767.98px) { 
       .main_header_right{
           display: none;
