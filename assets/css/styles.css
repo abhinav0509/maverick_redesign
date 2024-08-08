@@ -270,8 +270,9 @@ h1 {
 }
 
 .scroll-container {
-  height: 50vh;
+  height: 100px;
   position: relative;
+ 
 }
 
 .carousel-primary,
@@ -282,6 +283,7 @@ h1 {
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
+  
 
 
 }
@@ -347,6 +349,19 @@ h1 {
   -o-animation-play-state: paused;
   animation-play-state: paused;
 
+}
+
+#tech-stack{
+  background-color: #fff;
+ 
+  height:300px;
+}
+#tech-stack #section-subtitle{
+  color:black;
+}
+
+#testimonial{
+  background-color: #000000;
 }
 
     @media (max-width: 767.98px) { 
