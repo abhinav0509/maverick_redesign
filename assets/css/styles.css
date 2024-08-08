@@ -444,14 +444,16 @@ h1 {
   font-size: 17px;
 }
 
-
 #footer{
-  background-color: #fff;
- } 
+ background-color: #fff;
+}
 .footer-img {
-  background-image: url(./assets/img/footer/Footer_bg.jpg);
-  padding-top: 60px;
-  background-repeat: no-repeat;
+  background-image: url(../img/footer/Footer_bg.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .footer-main {
@@ -487,7 +489,6 @@ span {
 .footer-admin-id{
   font-weight: 500;
 }
-
     @media (max-width: 767.98px) { 
       .main_header_right{
           display: none;
