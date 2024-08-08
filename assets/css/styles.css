@@ -362,18 +362,24 @@ h1 {
 }
 
 #testimonial{
-  background-color: #000000;
+  
 }
 
-/* #contact-us{
+ #contact-us{
   background-color: #000000;
-} */
-contact-bg-img{
-  background-image: url("../img/contactus/darkmodegradient_bg.svg");
+  background-image: url(../img/contactus/darkmodegradient_bg.svg),url(../img/contactus/darlmode_splash_maverick.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+.contact-bg-img{
+  /* background-image: url(../img/contactus/darkmodegradient_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
   #contact-form-heading{
     margin-bottom: 13px;
+    color:var(--primary-color);
   }
 
  #contact-left-title{
@@ -381,10 +387,12 @@ contact-bg-img{
   }
 
   #contact-left-heading{
-    font-size: 37px;
+    font-size: 48px;
       padding: 25px;
       margin-left: 63px;
-      font-weight: 700;
+      font-weight:900;
+      line-height: 1.5;
+
   }
 
   .contact-form-title{
