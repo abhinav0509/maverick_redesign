@@ -13,7 +13,24 @@
     <title>Maverick Softwares</title>
 </head> 
  <style>
- 
+ .svg-animation{
+  position: absolute;
+  z-index: -10;
+  top:15%;
+  left:4%;
+  
+  animation: spin 20s linear infinite;
+  
+ }
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+     transform: rotate(360deg);
+  }
+  
+}
 
  </style>
 <body>
@@ -69,7 +86,9 @@
 
     <!--Hero Section Start-->
      <section class="hero mt-4">
-    
+        <div class="svg-animation">
+          <img src="./assets/img/hero/hero-circle.svg">
+        </div>
         <div class="container">
 
             <div class="row">
@@ -271,7 +290,7 @@
           </div>
           <div class="col-lg-6">
             <div class="cs_portfolio cs_style_1">
-              <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img src="assets/img/creative-agency/portfolio_3.jpeg" alt="Portfolio"></a>
+              <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img src="assets/img/creative-agency/sanjeevani-mamta-hero.png" alt="Portfolio"></a>
               <div class="portfolio_info">
                 <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Sanjeevani Mamta</a></h2>
                 <a href="portfolio-details.html" class="cs_portfolio_btn">See Project</a>
@@ -529,7 +548,7 @@
                   <li>Website Development</li>
 
                   <li>CMS Development</li>
-                  <li>Healthcare Saas</li>
+                  <li>Healthcare SaaS</li>
                   <li>Frontend Development</li>
                   <li>Mobile App Development</li>
                   <li>UI UX Design</li>
