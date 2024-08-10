@@ -104,6 +104,9 @@ h1 {
       color: var(--primary-color) !important;
 
     }
+    #hero{
+      margin-top: 80px;
+    }
     #hero-subtitle{
       margin-bottom: 24px;
 
