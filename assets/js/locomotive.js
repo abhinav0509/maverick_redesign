@@ -1,7 +1,7 @@
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("body"),
-  smooth: true,
-});
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector("body"),
+//   smooth: true,
+// });
 
 // function circleMouseFollower() {
 //   window.addEventListener("mousemove", function (dets) {
