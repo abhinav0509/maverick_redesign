@@ -637,7 +637,7 @@
                   $("#contact-button").attr('disabled',true);  	  	    
                 var formData=new FormData($(this)[0]);			   	
                $.ajax({
-                 url: 'sendemail.php',
+                 url: 'libraries/sendemail.php',
                     type: 'POST',
                     data: formData,            
                     processData: false,
