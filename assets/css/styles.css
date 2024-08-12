@@ -117,9 +117,7 @@ h1 {
     .svg-animation{
       position: absolute;
       z-index: 12;
-     
       left:6%;
-      
       animation: spin 20s linear infinite;
       
      }
@@ -172,6 +170,22 @@ h1 {
 
     #services{
       background-color: #000000;
+      position: relative;
+    }
+    .bg-splash{
+        position: absolute;
+        top:20%;
+        left:80%;
+        height:600px;
+        width:600px;
+        object-fit: contain;
+        border-radius: 50%;
+        object-fit: cover;
+        transform: rotate(45deg);
+    }
+
+    .bg-splash img{
+        max-width: 100%;
     }
 
     #section-title{
