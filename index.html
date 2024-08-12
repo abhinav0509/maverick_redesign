@@ -447,31 +447,31 @@
 
                 </p>
 
-                <form id="formtag" class="mt-4">
+                <form id="emailFormSubmit" method="post" class="mt-4">
                   <div class="form-group text-light">
                     <label for="fname" class="contact-form-title">Your Name</label>
-                    <input type="text" class="form-control " id="fname" name="user_name" />
+                    <input type="text" class="form-control " id="formName" name="name" />
                     <p class="error-message" id="error-name">
                       Name must be filled out
                     </p>
                   </div>
                   <div class="form-group text-light">
                     <label for="email" class="contact-form-title">Your Email</label>
-                    <input type="email" class="form-control " id="email" name="user_email" />
+                    <input type="email" class="form-control " id="formEmail" name="email" />
                     <p class="error-message" id="error-email">
                       Please enter a valid email address
                     </p>
                   </div>
                   <div class="form-group text-light">
                     <label for="phone" class="contact-form-title">Your contact</label>
-                    <input type="tel" class="form-control " id="phone" name="user_phone" />
+                    <input type="tel" class="form-control " id="formMobile" name="phone" />
                     <p class="error-message" id="error-phone">
                       Please enter a valid 10-digit phone number
                     </p>
                   </div>
                   <div class="form-group text-light">
                     <label for="query" class="contact-form-title">Your message</label>
-                    <textarea class="form-control " id="query" name="user_query" rows="4"></textarea>
+                    <textarea class="form-control " id="formMsg" name="message" placeholder="Write your note..." rows="4"></textarea>
                     <p class="error-message" id="error-query">
                       Query must be filled out
                     </p>
@@ -486,87 +486,9 @@
             </div>
           </div>
         </div>
-
-        <script>
-          document.getElementById("formtag").addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            let valid = validateForm();
-
-            if (valid) {
-              // Show success message and hide form
-              document.getElementById("form_success").style.display = "block";
-              setTimeout(function () {
-                document.getElementById("form_success").style.display = "none";
-                document.getElementById("formtag").reset(); // Reset form after success message
-              }, 2000);
-            }
-          });
-
-          function validateForm() {
-            let valid = true;
-            resetStyles();
-
-            // Validate Name
-            let name = document.getElementById("fname").value.trim();
-            if (name === "") {
-              document.getElementById("fname").classList.add("error-border");
-              document.getElementById("error-name").style.display = "block";
-              valid = false;
-            }
-
-            // Validate Email
-            let email = document.getElementById("email").value.trim();
-            if (email === "" || !email.endsWith("@gmail.com")) {
-              document.getElementById("email").classList.add("error-border");
-              document.getElementById("error-email").style.display = "block";
-              valid = false;
-            }
-
-            // Validate Phone Number
-            let phone = document.getElementById("phone").value.trim();
-            if (phone === "" || phone.length !== 10 || isNaN(phone)) {
-              document.getElementById("phone").classList.add("error-border");
-              document.getElementById("error-phone").style.display = "block";
-              valid = false;
-            }
-
-            // Validate Query
-            let query = document.getElementById("query").value.trim();
-            if (query === "") {
-              document.getElementById("query").classList.add("error-border");
-              document.getElementById("error-query").style.display = "block";
-              valid = false;
-            }
-
-            return valid;
-          }
-
-          function resetStyles() {
-            let elements = document.getElementsByTagName("input");
-            for (let i = 0; i < elements.length; i++) {
-              elements[i].classList.remove("error-border");
-            }
-
-            elements = document.getElementsByTagName("textarea");
-            for (let i = 0; i < elements.length; i++) {
-              elements[i].classList.remove("error-border");
-            }
-
-            let errorMessages = document.getElementsByClassName("error-message");
-            for (let i = 0; i < errorMessages.length; i++) {
-              errorMessages[i].style.display = "none";
-            }
-          }
-        </script>
-
-
       </div>
-
   </section>
-
   <!-- contact-us  section end-->
-
 
    <!-- footer section start -->
   <section id="footer">
@@ -706,8 +628,66 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/countUp.js" type="module"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-    <script src="./assets/js/locomotive.js"></script>
-     -->
-  
+    <script src="./assets/js/locomotive.js"></script>-->
+    <script>		
+      $("#emailFormSubmit").submit(function(event){
+          event.preventDefault();
+          var flag=validateMyForm();			
+          if(flag){	
+                  $(".mainLoder").show();
+                  $("#contact-button").attr('disabled',true);  	  	    
+                var formData=new FormData($(this)[0]);			   	
+               $.ajax({
+                 url: 'libraries/sendemail.php',
+                    type: 'POST',
+                    data: formData,            
+                    processData: false,
+                    contentType: false,
+                    success: function(data){
+                      var obj=$.parseJSON(data);
+                if(obj.message=="Success"){
+                  alert("Enquiry Send...!");
+                  $(".mainLoder").hide();
+                  $("#contact-button").attr('disabled',false); 						
+                  $("#emailFormSubmit input").val("");
+                  $("#emailFormSubmit textarea").val("");
+                }
+                else if(obj.message=="Require"){
+                  $(".mainLoder").hide();
+                  $("#contact-button").attr('disabled',false); 
+                  alert("All fields are required...!");
+                }
+                
+              },
+              error: function(error){
+                $(".mainLoder").hide();
+                $("#contact-button").attr('disabled',false);
+                alert("Error");
+                $(".mainLoder").hide();
+              }
+            });
+        }else{
+          alert("All fields required...!");
+        }			
+    });
+    
+    function validateMyForm(){
+      var flag=true;
+      if($("#formName").val()==""){
+        flag=false;
+      }
+      if($("#formEmail").val()==""){
+        flag=false;
+      }	
+      if($("#formMobile").val()==""){
+        flag=false;
+      }
+      if($("#formMsg").val()==""){
+        flag=false;
+      }
+    
+      return flag;
+    }
+    </script>
 </body>
 </html>
