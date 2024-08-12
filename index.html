@@ -10,7 +10,7 @@
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="./assets/css/locomotive.css"> -->
-    <title>Maverick Softwares</title>
+    <title>Maverick Softwares-Web Development Agency Pune</title>
 </head> 
  <style>
 
@@ -24,31 +24,14 @@
   border-radius: 50%;
 } */
 
-.svg-animation{
-  position: absolute;
-  z-index: -10;
- 
-  left:6%;
-  
-  animation: spin 20s linear infinite;
-  
- }
-@keyframes spin {
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-     transform: rotate(360deg);
-  }
-  
-}
+
   
  </style>
 <body>
   <!-- <div class="minicircle"></div> -->
     <!--Header Section Start-->
    
-    <header class="mt-4">
+    <header id="header-container" class="mt-4">
         <div class="container main_header_in d-flex justify-content-between">
             
                 <div class="main_header_left">
@@ -99,10 +82,11 @@
 
     <!--Hero Section Start-->
      <section id="hero">
-      
+        
         <div class="svg-animation">
           <img src="./assets/img/hero/hero-circle.svg">
         </div>
+       
         <div class="container">
 
             <div class="row">
@@ -126,9 +110,7 @@
              
             </video>
         </div>
-        <div class="hero-bg-splash">
-
-        </div>
+        
       
      </section>
     <!--Hero Section End-->
@@ -315,16 +297,6 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="cs_portfolio cs_style_1">
-              <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img src="assets/img/creative-agency/sanjeevani-mamta-hero.png" alt="Portfolio"></a>
-              <div class="portfolio_info">
-                <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Sanjeevani Mamta</a></h2>
-                <a href="portfolio-details.html" class="cs_portfolio_btn">See Project</a>
-              </div>
-            </div>
-          </div>
-       
-          <div class="col-lg-6">
-            <div class="cs_portfolio cs_style_1">
               <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img src="assets/video/Hub.jobs-gif.gif" alt="Portfolio"></a>
               <div class="portfolio_info">
                 <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Hub Jobs</a></h2>
@@ -332,7 +304,29 @@
               </div>
             </div>
           </div>
+          <div class="col-lg-6">
+            <div class="cs_portfolio cs_style_1">
+              <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img src="assets/img/creative-agency/sanjeevani-mamta-hero.png" alt="Portfolio"></a>
+              <div class="portfolio_info">
+                <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Sanjeevani Mamta</a></h2>
+                <a href="portfolio-details.html" class="cs_portfolio_btn">See Project</a>
+              </div>
+            </div>
+          </div>
      
+          <div class="col-lg-6">
+
+            <div class="cs_portfolio cs_style_1">
+              <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img src="assets/video/Medico-Helpine-Video.gif" alt="Portfolio"></a>
+              <div class="portfolio_info">
+                <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Medico Helpline</a></h2>
+                <a href="portfolio-details.html" class="cs_portfolio_btn">See Project</a>
+              </div>
+            </div>
+          </div>
+          
+       
+         
           <div class="col-lg-6">
             <div class="cs_portfolio cs_style_1">
               <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img src="assets/img/creative-agency/richnf.png" alt="Portfolio"></a>
@@ -342,16 +336,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-
-            <div class="cs_portfolio cs_style_1">
-              <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img src="assets/img/creative-agency/portfolio_1.jpeg" alt="Portfolio"></a>
-              <div class="portfolio_info">
-                <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Medico Helpline</a></h2>
-                <a href="portfolio-details.html" class="cs_portfolio_btn">See Project</a>
-              </div>
-            </div>
-          </div>
+       
         </div>
         
       </div>
@@ -422,6 +407,8 @@
             <h2 id="section-subtitle" class="text-center">Hear it from our happy customers</h2>
           </div>
         </div>
+        
+
       </section> 
   <!--Testimonial section end-->
     
@@ -434,8 +421,8 @@
 
 
           <div class="row">
-            <div class="col d-flex justify-content-center align-items-center " id="contact-left-title">
-              <h1 class="text-sm-center " id="contact-left-heading">Let's Build Something Great Together</h1>
+            <div class="col d-flex justify-content-center align-items-center" id="contact-left-title">
+              <h1 class="text-sm-center" id="contact-left-heading">Let's Build Something Great Together</h1>
 
             </div>
             <div class="col-md-8 mx-auto">
@@ -455,28 +442,28 @@
                 <form id="emailFormSubmit" method="post" class="mt-4">
                   <div class="form-group text-light">
                     <label for="fname" class="contact-form-title">Your Name</label>
-                    <input type="text" class="form-control " id="formName" name="name" />
+                    <input type="text" class="form-control " id="formName" name="name" placeholder="Enter your name here" />
                     <p class="error-message" id="error-name">
                       Name must be filled out
                     </p>
                   </div>
                   <div class="form-group text-light">
                     <label for="email" class="contact-form-title">Your Email</label>
-                    <input type="email" class="form-control " id="formEmail" name="email" />
+                    <input type="email" class="form-control " id="formEmail" name="email" placeholder="Enter your email here"  />
                     <p class="error-message" id="error-email">
                       Please enter a valid email address
                     </p>
                   </div>
                   <div class="form-group text-light">
                     <label for="phone" class="contact-form-title">Your contact</label>
-                    <input type="tel" class="form-control " id="formMobile" name="phone" />
+                    <input type="tel" class="form-control " id="formMobile" name="phone" placeholder="Enter your contact here" />
                     <p class="error-message" id="error-phone">
                       Please enter a valid 10-digit phone number
                     </p>
                   </div>
                   <div class="form-group text-light">
                     <label for="query" class="contact-form-title">Your message</label>
-                    <textarea class="form-control " id="formMsg" name="message" placeholder="Write your note..." rows="4"></textarea>
+                    <textarea class="form-control " id="formMsg" name="message" placeholder="Write your message here.." rows="4"></textarea>
                     <p class="error-message" id="error-query">
                       Query must be filled out
                     </p>
@@ -632,6 +619,7 @@
     <script src="./assets/js/main.js" type="module"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/countUp.js" type="module"></script>
+    
     <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="./assets/js/locomotive.js"></script>-->
     <script>		
