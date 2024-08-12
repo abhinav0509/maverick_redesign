@@ -108,7 +108,7 @@ h1 {
     }
     #hero{
       background-color: #000000;
-      background-image: url(../img/contactus/darkmodegradient_bg.svg);
+      background-image: url(../img/contactus/darkmodegradient_bg.svg),url(../img/contactus/darlmode_splash_maverick.svg);
       background-repeat: no-repeat;
       background-size: cover;
       margin-top: 64px;
@@ -154,6 +154,7 @@ h1 {
     #heroVideo{
       min-width: 100%;
       min-height: 100%;
+      z-index: 999;
     }
 
     .company_numbers{
