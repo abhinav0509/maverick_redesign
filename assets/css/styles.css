@@ -106,11 +106,23 @@ h1 {
     }
     #hero{
       margin-top: 80px;
+      position: relative;
+  
+    }
+    .hero-bg-splash{
+      position: absolute;
+      top:50%;
+      bottom:0;
+
+      background-image: url(../img/contactus/darkmodegradient_bg.svg),url(../img/contactus/darlmode_splash_maverick.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
     }
     #hero-subtitle{
       margin-bottom: 24px;
 
-    }
+    } 
     #hero-title{
       font-size: 68px;
       margin-bottom: 16px;
@@ -231,14 +243,14 @@ h1 {
       width:430px; 
       height:600px;
       border-radius: 16px;
-      background-image: url("../img/services/service_8.jpeg");
+      background-image: url("../img/services/Web-designer.jpg");
      
       
     }
      #background-img{
       background-color:var(--primary-color);
-      width:470px; 
-      height:650px;
+      width:450px; 
+      height:620px;
       border-radius: 16px;
       
     }
@@ -367,7 +379,7 @@ h1 {
 #testimonial{
   
 }
-
+ 
  #contact-us{
   background-color: #000000;
   background-image: url(../img/contactus/darkmodegradient_bg.svg),url(../img/contactus/darlmode_splash_maverick.svg);
@@ -487,6 +499,17 @@ span {
 
 .footer-bottom {
   margin-top: 32px;
+}
+#footer a {
+  text-decoration: none !important;
+}
+
+a .fa-brands {
+  color: black;
+}
+
+a .footer-links {
+  color: black;
 }
 
 .footer-admin-id{

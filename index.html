@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="./assets/css/locomotive.css">
     <title>Maverick Softwares</title>
 </head> 
  <style>
  .svg-animation{
   position: absolute;
   z-index: -10;
-  top:25%;
-  left:4%;
+ 
+  left:6%;
   
   animation: spin 20s linear infinite;
   
@@ -31,10 +31,21 @@
   }
   
 }
+/* .minicircle {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  position: absolute;
+  z-index: 999;
+  width: 10px;
+  height: 10px;
+  background-color:#EA5C1F;
+  border-radius: 50%;
+} */
 
  </style>
 <body>
+  <!-- <div class="minicircle"></div> -->
     <!--Header Section Start-->
+   
     <header class="mt-4">
         <div class="container main_header_in d-flex justify-content-between">
             
@@ -86,6 +97,7 @@
 
     <!--Hero Section Start-->
      <section id="hero">
+      
         <div class="svg-animation">
           <img src="./assets/img/hero/hero-circle.svg">
         </div>
@@ -112,37 +124,66 @@
              
             </video>
         </div>
+        <div class="hero-bg-splash">
 
+        </div>
+      
      </section>
     <!--Hero Section End-->
 
     <!-- Company Counter Section Begin-->
     <nav class="level">
-    <section class="company_numbers counters mt-4">
-      
-      <div class="container">
-        <div class="row">
-           <div class="col-sm-6 col-lg-3">
-            <p class="text-center">Satisfied Clients</p>
-            <h2 class="text-center counter js-count-up" style="color:#fff !important;" data-value="120"></h2>
-           </div>
-           <div class="col-sm-6 col-lg-3">
-            <p class="text-center">Projects Delivered</p>
-            <h2 class="text-center counter js-count-up" data-value="150"></h2>
-           </div>
-           <div class="col-sm-6 col-lg-3">
-            <p class="text-center">Years of Expereince</p>
-            <h2 class="text-center counter js-count-up" data-value="15"></h2>
-           </div>
-           <div class="col-sm-6 col-lg-3">
-            <p class="text-center">Client Satisfaction</p>
-            <h2 class="text-center counter js-count-up" data-value="100"></h2>
-           </div>
+      <section class="company_numbers counters mt-4">
+  
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3 ">
+              <div class="d-flex justify-content-center align-items-center">
+                <h2 class="text-center counter js-count-up" style="color:#fff !important;" data-value="120"> </h2>
+                  <h1 style="margin-top: -17px; font-size: 4.5rem;">+</h1>
+  
+              </div>
+              <div>
+                <p class="text-center">Satisfied Clients</p>
+  
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <h2 class="text-center counter js-count-up" data-value="150"><span class="text-light"></h2>
+                <h1 style="margin-top: -17px; font-size: 4.5rem;">+</h1>
+              </div>
+              <div>
+                <p class="text-center">Projects Delivered</p>
+              </div>
+  
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <h2 class="text-center counter js-count-up" data-value="15"></h2>
+                <h1 style="margin-top: -17px; font-size: 4.5rem;">+</h1>
+              </div>
+              <div>
+                <p class="text-center">Years of Expereince</p>
+              </div>
+  
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <h2 class="text-center counter js-count-up" data-value="100"></h2>
+                <h1 style="margin-top: -17px; font-size: 4.5rem;">+</h1>
+              </div>
+              <div>
+                <p class="text-center">Client Satisfaction</p>
+  
+              </div>
+  
+            </div>
+          </div>
         </div>
-      </div>
-    
-    </section>
-  </nav>
+  
+      </section>
+    </nav>
     <!--Services section start -->
     <section id="services">
       <div class="sect-intro">
@@ -377,13 +418,13 @@
           </div>
         </div>
       </section> 
-    <!--Testimonial section end-->
+  <!--Testimonial section end-->
     
-     <!-- contact-us  section start-->
+  <!-- contact-us  section start-->
 
   <section id="contact-us">
     <div class="container">
-      <div class="contact-bg-img   ">
+      <div class="contact-bg-img">
         <div class="contact-main">
 
 
@@ -526,7 +567,8 @@
 
 
    <!-- footer section start -->
-   <section id="footer">
+  </div>   
+  <section id="footer">
 
     <footer class="footer-img ">
       <div class="footer-main">
@@ -544,14 +586,26 @@
               <div class="footer-services">
                 <h5 class="text-dark footer-item-title">Our Services</h5>
 
-                <ul class="list-unstyled">
-                  <li>Website Development</li>
+                <ul class="list-unstyled ">
+                  <a href="">
+                    <li class="footer-links">Website Development</li>
+                  </a>
 
-                  <li>CMS Development</li>
-                  <li>Healthcare SaaS</li>
-                  <li>Frontend Development</li>
-                  <li>Mobile App Development</li>
-                  <li>UI UX Design</li>
+                  <a href="">
+                    <li class="footer-links">CMS Development</li>
+                  </a>
+                  <a href="">
+                    <li class="footer-links">Healthcare Saas</li>
+                  </a>
+                  <a href="">
+                    <li class="footer-links">Frontend Development</li>
+                  </a>
+                  <a href="">
+                    <li class="footer-links">Mobile App Development</li>
+                  </a>
+                  <a href="">
+                    <li class="footer-links">UI UX Design</li>
+                  </a>
                 </ul>
 
               </div>
@@ -562,13 +616,25 @@
                 <h5 class="text-dark footer-item-title">Useful-Links</h5>
                 <div></div>
                 <div></div>
-                <ul class="list-unstyled">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Services</li>
-                  <li>Portfolio</li>
-                  <li>Our Clients</li>
-                  <li>Contact</li>
+                <ul class="list-unstyled ">
+                  <a href="">
+                    <li class="footer-links">Home</li>
+                  </a>
+                  <a href="">
+                    <li class="footer-links">About</li>
+                  </a>
+                  <a href="">
+                    <li class="footer-links">Services</li>
+                  </a>
+                  <a href="">
+                    <li class="footer-links">Portfolio</li>
+                  </a>
+                  <a href="">
+                    <li class="footer-links">Our Clients</li>
+                  </a>
+                  <a href="">
+                    <li class="footer-links">Contact</li>
+                  </a>
                 </ul>
               </div>
             </div>
@@ -578,15 +644,21 @@
                 <h5 class="text-dark  footer-item-title" style="margin-left: 10px;">Headquarter</h5>
 
                 <ul class="list-unstyled">
-                  <li class="d-flex"><i class="fa-solid fa-location-dot">&nbsp;</i> <h6 class="text-dark" style="margin-left: 7px;">1st Floor,Sarita chambers,Above Punjab National
-                    bank,
-                    Bibvewadi kondwa road, Pune-411037 (India)</h6>
+                  <li class="d-flex"><i class="fa-solid fa-location-dot">&nbsp;</i>
+                    <h6 class="text-dark" style="margin-left: 7px;">1st Floor,Sarita chambers,Above Punjab National
+                      bank,
+                      Bibvewadi kondwa road, Pune-411037 (India)</h6>
                   </li>
 
                   <li class="mt-2 d-flex"><i class="fa-solid fa-envelope">&nbsp;</i>
                     <h6 class="text-dark" style="margin-left: 7px;"> help@mavericksoftware.in </h6>
-                  <li style="margin-left: 26px; margin-top: -16px;"> </h6 class="footer-admin-id" >admin@mavericksoftware.in</h6></li></li>
-                  <li class="mt-2 fw-bold d-flex "><i class="fa-solid fa-phone ">&nbsp;</i><h6 class="text-dark" style="margin-left: 7px;">  +91 87930 93020 </h6></li>
+                  <li style="margin-left: 26px; margin-top: -16px;">
+                    </h6 class="footer-admin-id">admin@mavericksoftware.in</h6>
+                  </li>
+                  </li>
+                  <li class="mt-2 fw-bold d-flex "><i class="fa-solid fa-phone ">&nbsp;</i>
+                    <h6 class="text-dark" style="margin-left: 7px;"> +91 87930 93020 </h6>
+                  </li>
                 </ul>
 
               </div>
@@ -599,7 +671,7 @@
         <div class="d-sm-flex justify-content-evenly  footer-bottom ">
           <div class="footer-bottom-left">
             <span>
-              <a href=""><i class="fa-brands fa-linkedin bg-dark text-black"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
               <a href=""><i class="fa-brands fa-twitter"></i></a>
               <a href=""><i class="fa-brands fa-youtube"></i></a>
               <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -607,7 +679,7 @@
             </span>
           </div>
           <div class="footer-bottom-center">
-            <span> Copyright © Maverick Software India Pvt.Ltd. </span>
+            <span> Copyright © 2024 Maverick Software India Pvt.Ltd. </span>
           </div>
           <div class="footer-bottom-right">
             <span>
@@ -620,7 +692,10 @@
       </div>
 
     </footer>
+  
+
   </section>
+ 
 
 
     <!--Javascript dependencies-->
@@ -629,7 +704,9 @@
     <script src="./assets/js/main.js" type="module"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/countUp.js" type="module"></script>
-    
-     
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="./assets/js/locomotive.js"></script>
+     -->
+  
 </body>
 </html>
