@@ -288,7 +288,45 @@ h1 {
 
     #portfolio{
       background-color: #000000;
+      position: relative;
+      z-index: 1000;
     }
+
+    .bg-splash-portfolio{
+      position: absolute;
+      top:8%;
+      left:-15%;
+      height:600px;
+      width:600px;
+      object-fit: contain;
+      border-radius: 50%;
+      object-fit: cover;
+      transform: rotate(45deg);
+      z-index: -999;
+    }
+    .bg-splash-portfolio-two{
+      position: absolute;
+      top:50%;
+      left:80%;
+      height:600px;
+      width:600px;
+      object-fit: contain;
+      border-radius: 50%;
+      object-fit: cover;
+      transform: rotate(45deg);
+      z-index: -111111;
+    }
+    .portoflio-items{
+      z-index: 2000;
+    }
+
+  .bg-splash-portfolio img{
+      max-width: 100%;
+  }
+  .bg-splash-portfolio-two img{
+    max-width: 100%;
+}
+
     .cs_portfolio.cs_style_1 .cs_portfolio_thumb img {
       width: 100%;
       border-radius: inherit;
@@ -313,11 +351,13 @@ h1 {
 
 #tech-stack{
   overflow: hidden;
+  z-index: 99999999;
 }
 
 .scroll-container {
   height: 100px;
   position: relative;
+  z-index: 999999;
  
  
 }
@@ -400,7 +440,7 @@ h1 {
 
 #tech-stack{
   background-color: #fff;
- 
+  z-index: 2000;
   height:300px;
 }
 #tech-stack #section-subtitle{
