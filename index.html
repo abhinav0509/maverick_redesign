@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="./assets/css/locomotive.css"> -->
-    <title>Maverick Softwares</title>
-</head> 
- <style>
-
-/* .minicircle {
+  <!-- <link rel="stylesheet" href="./assets/css/locomotive.css"> -->
+  <title>Maverick Softwares</title>
+</head>
+<style>
+  /* .minicircle {
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
   position: absolute;
   z-index: 999;
@@ -24,407 +26,491 @@
   border-radius: 50%;
 } */
 
-.svg-animation{
-  position: absolute;
-  z-index: -10;
- 
-  left:6%;
-  
-  animation: spin 20s linear infinite;
-  
- }
-@keyframes spin {
-  0%{
-    transform: rotate(0deg);
+  .svg-animation {
+    position: absolute;
+    z-index: -10;
+
+    left: 6%;
+
+    animation: spin 20s linear infinite;
+
   }
-  100%{
-     transform: rotate(360deg);
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+
   }
-  
-}
-  
- </style>
+</style>
+
 <body>
   <!-- <div class="minicircle"></div> -->
-    <!--Header Section Start-->
-   
-    <header class="mt-4">
-        <div class="container main_header_in d-flex justify-content-between">
-            
-                <div class="main_header_left">
-                    <a class="navbar-brand" href="#">
-                        <img src="./assets/img/logo/MSIPL_PNG_LOGO.png" alt="maverick-logo">
-                    </a>
-                </div>
-                <div class="main_header_center">
-                    <nav class="container navbar navbar-expand-lg navbar-dark bg-dark">
-            
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                          <ul class="navbar-nav">
-                            <li class="nav-item active">
-                              <a class="nav-link" href="#">Home </span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Our Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Our Clients</a>
-                              </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Contact Us</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </nav>
-                </div>
-                <div class="main_header_right">
-                  <button class="secondary-btn bg-dark">Contact Us</button>
-                </div>
-              
-            
-        </div>
-        
-    </header>
-    <!--Header Section End-->
-
-
-    <!--Hero Section Start-->
-     <section id="hero">
-      
-        <div class="svg-animation">
-          <img src="./assets/img/hero/hero-circle.svg">
-        </div>
-        <div class="container">
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <div id="hero-text" class="d-flex flex-column text-center align-items-center">
-                        <h6 id="hero-subtitle" style="color:#EA5C1F;">Pune Based Web Development Agency</h6>
-                        <h1 id="hero-title">Transforming Ideas into Digital Reality</h1>
-                        <p class="col-sm-12 col-lg-7 text-center">Welcome to Maverick Softwares, where innovation meets excellence in web development. Elevate your online presence with our creative solutions
-                            tailored to grow your business needs.
-                        </p>
-                       <button class="secondary-btn bg-dark">Talk to Us</button>
-
-                    </div> 
-                   
-                    
-                </div>
-            </div>
-            <video class="col-md-12" autoplay muted loop id="heroVideo">
-              <source src="./assets/video/hero.mp4" type="video/mp4">
-             
-             
-            </video>
-        </div>
-        <div class="hero-bg-splash">
-
-        </div>
-      
-     </section>
-    <!--Hero Section End-->
-
-    <!-- Company Counter Section Begin-->
-    <nav class="level">
-      <section class="company_numbers counters mt-4">
+  <!--Header Section Start-->
+  <header class="mt-4">
+    <div class="container main_header_in d-flex justify-content-between">
   
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-lg-3 ">
-              <div class="d-flex justify-content-center align-items-center">
-                <h2 class="text-center counter js-count-up" style="color:#fff !important;" data-value="120"> </h2>
-                  <h1 style="margin-top: -17px; font-size: 4.5rem;">+</h1>
-  
-              </div>
-              <div>
-                <p class="text-center">Satisfied Clients</p>
-  
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <div class="d-flex justify-content-center align-items-center">
-                <h2 class="text-center counter js-count-up" data-value="150"><span class="text-light"></h2>
-                <h1 style="margin-top: -17px; font-size: 4.5rem;">+</h1>
-              </div>
-              <div>
-                <p class="text-center">Projects Delivered</p>
-              </div>
-  
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <div class="d-flex justify-content-center align-items-center">
-                <h2 class="text-center counter js-count-up" data-value="15"></h2>
-                <h1 style="margin-top: -17px; font-size: 4.5rem;">+</h1>
-              </div>
-              <div>
-                <p class="text-center">Years of Expereince</p>
-              </div>
-  
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <div class="d-flex justify-content-center align-items-center">
-                <h2 class="text-center counter js-count-up" data-value="100"></h2>
-                <h1 style="margin-top: -17px; font-size: 4.5rem;">+</h1>
-              </div>
-              <div>
-                <p class="text-center">Client Satisfaction</p>
-  
-              </div>
-  
-            </div>
-          </div>
-        </div>
-  
-      </section>
-    </nav>
-    <!--Services section start -->
-    <section id="services">
-      <div class="sect-intro">
-           <div class="container d-flex flex-column align-items-center">
-             <h5 id="section-title">Services</h5>
-             <h2 id="section-subtitle">Our Core Services</h2>
-           </div>
+      <div class="main_header_left">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/logo/MSIPL_PNG_LOGO.png" alt="maverick-logo">
+        </a>
       </div>
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class= "col-xl-6 col-lg-12 col-sm-12 col-md-12">
-            <div class="service-img">
-              <div id="background-img">
-                <div id="foreground-img">
-                  
-                </div>
-              </div>
-             
-            
-            </div>
+      <div class="main_header_center">
+        <nav class="container navbar navbar-expand-lg navbar-dark bg-dark">
+  
+          <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" `data-toggle="dropdown"`  aria-expanded="false">
+                  Our Services
+                  <!-- <i class="fa-solid fa-caret-down"></i> -->
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Website Development</a></li>
+                  <li><a class="dropdown-item" href="#">CMS Development</a></li>
+                  <li><a class="dropdown-item" href="#">Healthcare Saas</a></li>
+                  <li><a class="dropdown-item" href="#">Frontend Development</a></li>
+                  <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
+                  <li><a class="dropdown-item" href="#">UI UX Design</a></li>
+                  <li><a class="dropdown-item" href="#">Website Design & Development</a></li>
+                  <li><a class="dropdown-item" href="#">Content Management Systems</a></li>
+                  <li><a class="dropdown-item" href="#">Web Application Development</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-xl-6 col-lg-12 col-sm-12 col-md-12">
-            <div class="row">
-              <div class="col">
-                <div class="cs_hover_tab active">
-                  <a href="service-details.html" class="cs_iconbox cs_style_3">
-                  
-                    <span class="cs_iconbox_icon cs_center">
-                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
-                      </svg>            
-                               
-                    </span>
-                    <div class="cs_iconbox_in">
-                      <h4 class="cs_iconbox_title cs_fs_29">Website Design & Development</h4>
-                      <div class="cs_iconbox_subtitle">Crafting stunning, responsive websites that not only capture your brand’s essence but also convert visitors into loyal customers.</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="cs_hover_tab active">
-                  <a href="service-details.html" class="cs_iconbox cs_style_3">
-                  
-                    <span class="cs_iconbox_icon cs_center">
-                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
-                      </svg>            
-                                
-                    </span>
-                    <div class="cs_iconbox_in">
-                      <h4 class="cs_iconbox_title cs_fs_29">Content Management Systems</h4>
-                      <div class="cs_iconbox_subtitle">Simplifying content management with powerful, easy-to-use systems that allow you to effortlessly control and update your website’s content.</div>
-                    </div>
-                  </a>
-                </div>  
-                <div class="cs_hover_tab active">
-                  <a href="service-details.html" class="cs_iconbox cs_style_3">
-                  
-                    <span class="cs_iconbox_icon cs_center">
-                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
-                      </svg>            
-                                
-                    </span>
-                    <div class="cs_iconbox_in">
-                      <h4 class="cs_iconbox_title cs_fs_29">Web Application Development</h4>
-                      <div class="cs_iconbox_subtitle">Designing robust web applications that boost productivity and streamline your business processes with intuitive functionality and top-notch performance.</div>
-                    </div>
-                  </a>
-                </div>  
-                
-                <div class="cs_hover_tab active">
-                  <a href="service-details.html" class="cs_iconbox cs_style_3">
-                  
-                    <span class="cs_iconbox_icon cs_center">
-                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
-                      </svg>            
-                                
-                    </span>
-                    <div class="cs_iconbox_in">
-                      <h4 class="cs_iconbox_title cs_fs_29">Health Care IT Solutions</h4>
-                      <div class="cs_iconbox_subtitle">Empowering healthcare providers with cutting-edge IT solutions for efficient, secure, and streamlined patient care and management.</div>
-                    </div>
-                  </a>
-                </div>  
-                <div class="cs_hover_tab active">
-                  <a href="service-details.html" class="cs_iconbox cs_style_3">
-                  
-                    <span class="cs_iconbox_icon cs_center">
-                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
-                      </svg>            
-                                
-                    </span>
-                    <div class="cs_iconbox_in">
-                      <h4 class="cs_iconbox_title cs_fs_29">Mobile Application Development</h4>
-                      <div class="cs_iconbox_subtitle">Building sleek, user-friendly mobile apps that deliver seamless experiences and keep your audience engaged on the go.Curated perfectly for both IOS and Android platform</div>
-                    </div>
-                  </a>
-                </div>  
-              
-              </div>
-            </div>
+        </nav>
+      </div>
+      <div class="main_header_right d-none d-lg-block">
+        <button class="secondary-btn bg-dark">Contact Us</button>
+      </div>
+    </div>
+  </header>
+  
+  <nav id="sidenav" class="sidenav">
+    <ul class="sidenav-menu list-unstyled">
+      <li class="sidenav-item text-center">
+        <a class="sidenav-link" href="#">Home</a>
+      </li>
+      <li class="sidenav-item text-center">
+        <a class="sidenav-link" href="#">Our Services</a>
+      </li>
+      <li class="sidenav-item text-center">
+        <a class="sidenav-link" href="#">Portfolio</a>
+      </li>
+      <li class="sidenav-item text-center">
+        <a class="sidenav-link" href="#">Our Clients</a>
+      </li>
+      <li class="sidenav-item text-center">
+        <a class="sidenav-link" href="#">About Us</a>
+      </li>
+      <li class="sidenav-item text-center">
+        <a class="sidenav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <div id="sidenav-overlay" class="sidenav-overlay"></div>
+  
+  <script>
+    document.querySelector('.navbar-toggler').addEventListener('click', function () {
+      document.getElementById('sidenav').classList.toggle('sidenav-open');
+      document.getElementById('sidenav-overlay').classList.toggle('overlay-active');
+    });
+  
+    document.getElementById('sidenav-overlay').addEventListener('click', function () {
+      document.getElementById('sidenav').classList.remove('sidenav-open');
+      document.getElementById('sidenav-overlay').classList.remove('overlay-active');
+    });
+  
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('#navbarNav .nav-link');
+  
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          navLinks.forEach(link => link.classList.remove('active'));
+
+          this.classList.add('active');
+        });
+      });
+    });
+  </script>
+  
+
+  <!--Header Section End-->
+
+
+  <!--Hero Section Start-->
+  <section id="hero">
+
+    <div class="svg-animation">
+      <img src="./assets/img/hero/hero-circle.svg">
+    </div>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="hero-text" class="d-flex flex-column text-center align-items-center">
+            <h6 id="hero-subtitle" style="color:#EA5C1F;">Pune Based Web Development Agency</h6>
+            <h1 id="hero-title">Transforming Ideas into Digital Reality</h1>
+            <p class="col-sm-12 col-lg-7 text-center">Welcome to Maverick Softwares, where innovation meets excellence
+              in web development. Elevate your online presence with our creative solutions
+              tailored to grow your business needs.
+            </p>
+            <button class="secondary-btn bg-dark">Talk to Us</button>
+
           </div>
         </div>
       </div>
-      <div class="btns d-flex justify-content-center align-items-center mt-4">
-        <button class="secondary-btn text-center">See All Services</button>
-      </div>
-      
-       
-    </section>
+      <video class="col-md-12" autoplay muted loop id="heroVideo">
+        <source src="./assets/video/hero.mp4" type="video/mp4">
 
-    
-    <!--Services section end -->
+      </video>
+    </div>
+    <div class="hero-bg-splash">
 
-    <!--Portfolio Section Start-->
+    </div>
 
-    <section id="portfolio">
-      <div class="sect-intro">
-        <div class="container d-flex flex-column align-items-center">
-          <h5 id="section-title">Portfolio</h5>
-          <h2 id="section-subtitle">Our Selected Works</h2>
-        </div>
-      </div>
+  </section>
+  <!--Hero Section End-->
+
+  <!-- Company Counter Section Begin-->
+  <nav class="level">
+    <section class="company_numbers counters mt-4">
+
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="cs_portfolio cs_style_1">
-              <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img src="assets/img/creative-agency/sanjeevani-mamta-hero.png" alt="Portfolio"></a>
-              <div class="portfolio_info">
-                <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Sanjeevani Mamta</a></h2>
-                <a href="portfolio-details.html" class="cs_portfolio_btn">See Project</a>
-              </div>
-            </div>
-          </div>
-       
-          <div class="col-lg-6">
-            <div class="cs_portfolio cs_style_1">
-              <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img src="assets/video/Hub.jobs-gif.gif" alt="Portfolio"></a>
-              <div class="portfolio_info">
-                <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Hub Jobs</a></h2>
-                <a href="portfolio-details.html" class="cs_portfolio_btn">See Project</a>
-              </div>
-            </div>
-          </div>
-     
-          <div class="col-lg-6">
-            <div class="cs_portfolio cs_style_1">
-              <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img src="assets/img/creative-agency/richnf.png" alt="Portfolio"></a>
-              <div class="portfolio_info">
-                <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Rich and Fresh</a></h2>
-                <a href="portfolio-details.html" class="cs_portfolio_btn">See Project</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
+          <div class="col-sm-6 col-lg-3 ">
+            <div class="d-flex justify-content-center align-items-center">
+              <h2 class="text-center counter js-count-up" style="color:#fff !important;" data-value="120"> </h2>
+              <h1 style="margin-top: -17px; font-size: 4.5rem;">+</h1>
 
-            <div class="cs_portfolio cs_style_1">
-              <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img src="assets/img/creative-agency/portfolio_1.jpeg" alt="Portfolio"></a>
-              <div class="portfolio_info">
-                <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Medico Helpline</a></h2>
-                <a href="portfolio-details.html" class="cs_portfolio_btn">See Project</a>
-              </div>
             </div>
+            <div>
+              <p class="text-center">Satisfied Clients</p>
+
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <h2 class="text-center counter js-count-up" data-value="150"><span class="text-light"></h2>
+              <h1 style="margin-top: -17px; font-size: 4.5rem;">+</h1>
+            </div>
+            <div>
+              <p class="text-center">Projects Delivered</p>
+            </div>
+
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <h2 class="text-center counter js-count-up" data-value="15"></h2>
+              <h1 style="margin-top: -17px; font-size: 4.5rem;">+</h1>
+            </div>
+            <div>
+              <p class="text-center">Years of Expereince</p>
+            </div>
+
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <h2 class="text-center counter js-count-up" data-value="100"></h2>
+              <h1 style="margin-top: -17px; font-size: 4.5rem;">+</h1>
+            </div>
+            <div>
+              <p class="text-center">Client Satisfaction</p>
+
+            </div>
+
           </div>
         </div>
-        
       </div>
-     
+
     </section>
-    <!--Portfolio Section End-->
+  </nav>
 
-    <!--Technology Stack Section Start-->
-     
-    <section id="tech-stack">
-      <div class="sect-intro">
-        <div class="container d-flex flex-column align-items-center">
-          <h5 id="section-title" class="text-center">Tech Stack</h5>
-          <h2 id="section-subtitle" class="text-center">Technology We Command</h2>
-        </div>
+
+  <!--Services section start -->
+  <section id="services">
+    <div class="sect-intro">
+      <div class="container d-flex flex-column align-items-center">
+        <h5 id="section-title">Services</h5>
+        <h2 id="section-subtitle">Our Core Services</h2>
       </div>
-      <div class="container">
-        <div class="scroll-container">
-          <div class="carousel-primary">
-            <div class="logo-container">
-              <img src="./assets/img/technology/java.png" alt="html-logo" />
+    </div>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-xl-6 col-lg-12 col-sm-12 col-md-12">
+          <div class="service-img">
+            <div id="background-img">
+              <div id="foreground-img">
+
+              </div>
             </div>
-            <div class="logo-container">
-              <img src="./assets/img/technology/html.png" alt="css-logo" />
-            </div>
-            <div class="logo-container">
-              <img src="./assets/img/technology/javascript.png" alt="javascript-logo" />
-            </div>
-            <div class="logo-container">
-            <img src="./assets/img/technology/react.png" alt="react-logo" />
-            </div>
-            <div class="logo-container">
-              <img src="./assets/img/technology/mysql.png" alt="mysql-logo" />
-            </div>
-            
+
+
           </div>
-          <div class="carousel-primary carousel-secondary">
-            <div class="logo-container">
-              <img src="./assets/img/technology/php.png" alt="php-logo" />
-              </div>
-            <div class="logo-container">
-              <img src="./assets/img/technology/codeigniter.png" alt="ci-logo" />
-              </div>
-              <div class="logo-container">
-                <img src="./assets/img/technology/node.png" alt="node-logo" />
-              </div>
-              <div class="logo-container">
-                <img src="./assets/img/technology/android.png" alt="android-logo" />
-              </div>
-             
-                <div class="logo-container">
-                  <img src="./assets/img/technology/mongodb.png" alt="mongodb-logo" />
+        </div>
+        <div class="col-xl-6 col-lg-12 col-sm-12 col-md-12">
+          <div class="row">
+            <div class="col">
+              <div class="cs_hover_tab active">
+                <a href="service-details.html" class="cs_iconbox cs_style_3">
+
+                  <span class="cs_iconbox_icon cs_center">
+                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z"
+                        fill="currentColor"></path>
+                    </svg>
+
+                  </span>
+                  <div class="cs_iconbox_in">
+                    <h4 class="cs_iconbox_title cs_fs_29">Website Design & Development</h4>
+                    <div class="cs_iconbox_subtitle">Crafting stunning, responsive websites that not only capture your
+                      brand’s essence but also convert visitors into loyal customers.</div>
                   </div>
+                </a>
+              </div>
+              <div class="cs_hover_tab active">
+                <a href="service-details.html" class="cs_iconbox cs_style_3">
+
+                  <span class="cs_iconbox_icon cs_center">
+                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z"
+                        fill="currentColor"></path>
+                    </svg>
+
+                  </span>
+                  <div class="cs_iconbox_in">
+                    <h4 class="cs_iconbox_title cs_fs_29">Content Management Systems</h4>
+                    <div class="cs_iconbox_subtitle">Simplifying content management with powerful, easy-to-use systems
+                      that allow you to effortlessly control and update your website’s content.</div>
+                  </div>
+                </a>
+              </div>
+              <div class="cs_hover_tab active">
+                <a href="service-details.html" class="cs_iconbox cs_style_3">
+
+                  <span class="cs_iconbox_icon cs_center">
+                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z"
+                        fill="currentColor"></path>
+                    </svg>
+
+                  </span>
+                  <div class="cs_iconbox_in">
+                    <h4 class="cs_iconbox_title cs_fs_29">Web Application Development</h4>
+                    <div class="cs_iconbox_subtitle">Designing robust web applications that boost productivity and
+                      streamline your business processes with intuitive functionality and top-notch performance.</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="cs_hover_tab active">
+                <a href="service-details.html" class="cs_iconbox cs_style_3">
+
+                  <span class="cs_iconbox_icon cs_center">
+                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z"
+                        fill="currentColor"></path>
+                    </svg>
+
+                  </span>
+                  <div class="cs_iconbox_in">
+                    <h4 class="cs_iconbox_title cs_fs_29">Health Care IT Solutions</h4>
+                    <div class="cs_iconbox_subtitle">Empowering healthcare providers with cutting-edge IT solutions for
+                      efficient, secure, and streamlined patient care and management.</div>
+                  </div>
+                </a>
+              </div>
+              <div class="cs_hover_tab active">
+                <a href="service-details.html" class="cs_iconbox cs_style_3">
+
+                  <span class="cs_iconbox_icon cs_center">
+                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z"
+                        fill="currentColor"></path>
+                    </svg>
+
+                  </span>
+                  <div class="cs_iconbox_in">
+                    <h4 class="cs_iconbox_title cs_fs_29">Mobile Application Development</h4>
+                    <div class="cs_iconbox_subtitle">Building sleek, user-friendly mobile apps that deliver seamless
+                      experiences and keep your audience engaged on the go.Curated perfectly for both IOS and Android
+                      platform</div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="btns d-flex justify-content-center align-items-center mt-4">
+      <button class="secondary-btn text-center">See All Services</button>
+    </div>
+
+
+  </section>
+
+
+  <!--Services section end -->
+
+  <!--Portfolio Section Start-->
+
+  <section id="portfolio">
+    <div class="sect-intro">
+      <div class="container d-flex flex-column align-items-center">
+        <h5 id="section-title">Portfolio</h5>
+        <h2 id="section-subtitle">Our Selected Works</h2>
       </div>
-   
-    </section>
-
-    <!--Technology Stack Section End-->
-
-    <!--Testimonial section start-->
-      <section id="testimonial">
-        <div class="sect-intro">
-          <div class="container d-flex flex-column align-items-center">
-            <h5 id="section-title" class="text-center">Testimonial</h5>
-            <h2 id="section-subtitle" class="text-center">Hear it from our happy customers</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="cs_portfolio cs_style_1">
+            <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img
+                src="assets/img/creative-agency/sanjeevani-mamta-hero.png" alt="Portfolio"></a>
+            <div class="portfolio_info">
+              <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Sanjeevani Mamta</a></h2>
+              <a href="portfolio-details.html" class="cs_portfolio_btn">See Project</a>
+            </div>
           </div>
         </div>
-      </section> 
+
+        <div class="col-lg-6">
+          <div class="cs_portfolio cs_style_1">
+            <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img
+                src="assets/video/Hub.jobs-gif.gif" alt="Portfolio"></a>
+            <div class="portfolio_info">
+              <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Hub Jobs</a></h2>
+              <a href="portfolio-details.html" class="cs_portfolio_btn">See Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="cs_portfolio cs_style_1">
+            <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img
+                src="assets/img/creative-agency/richnf.png" alt="Portfolio"></a>
+            <div class="portfolio_info">
+              <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Rich and Fresh</a></h2>
+              <a href="portfolio-details.html" class="cs_portfolio_btn">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+
+          <div class="cs_portfolio cs_style_1">
+            <a href="portfolio-details.html" class="cs_portfolio_thumb cs_radius_5"><img
+                src="assets/img/creative-agency/portfolio_1.jpeg" alt="Portfolio"></a>
+            <div class="portfolio_info">
+              <h2 class="portfolio_title cs_fs_38"><a href="portfolio-details.html">Medico Helpline</a></h2>
+              <a href="portfolio-details.html" class="cs_portfolio_btn">See Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!--Portfolio Section End-->
+
+  <!--Technology Stack Section Start-->
+
+  <section id="tech-stack">
+    <div class="sect-intro">
+      <div class="container d-flex flex-column align-items-center">
+        <h5 id="section-title" class="text-center">Tech Stack</h5>
+        <h2 id="section-subtitle" class="text-center">Technology We Command</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="scroll-container">
+        <div class="carousel-primary">
+          <div class="logo-container">
+            <img src="./assets/img/technology/java.png" alt="html-logo" />
+          </div>
+          <div class="logo-container">
+            <img src="./assets/img/technology/html.png" alt="css-logo" />
+          </div>
+          <div class="logo-container">
+            <img src="./assets/img/technology/javascript.png" alt="javascript-logo" />
+          </div>
+          <div class="logo-container">
+            <img src="./assets/img/technology/react.png" alt="react-logo" />
+          </div>
+          <div class="logo-container">
+            <img src="./assets/img/technology/mysql.png" alt="mysql-logo" />
+          </div>
+
+        </div>
+        <div class="carousel-primary carousel-secondary">
+          <div class="logo-container">
+            <img src="./assets/img/technology/php.png" alt="php-logo" />
+          </div>
+          <div class="logo-container">
+            <img src="./assets/img/technology/codeigniter.png" alt="ci-logo" />
+          </div>
+          <div class="logo-container">
+            <img src="./assets/img/technology/node.png" alt="node-logo" />
+          </div>
+          <div class="logo-container">
+            <img src="./assets/img/technology/android.png" alt="android-logo" />
+          </div>
+
+          <div class="logo-container">
+            <img src="./assets/img/technology/mongodb.png" alt="mongodb-logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <!--Technology Stack Section End-->
+
+  <!--Testimonial section start-->
+  <section id="testimonial">
+    <div class="sect-intro">
+      <div class="container d-flex flex-column align-items-center">
+        <h5 id="section-title" class="text-center">Testimonial</h5>
+        <h2 id="section-subtitle" class="text-center">Hear it from our happy customers</h2>
+      </div>
+    </div>
+  </section>
   <!--Testimonial section end-->
-    
+
   <!-- contact-us  section start-->
 
   <section id="contact-us">
@@ -445,9 +531,10 @@
                 <p class="text-center mt-2" id="form_initial">
                   Our friendly team would love to hear from you
                 </p>
-                 
-              
-                <p class="success-message text-center mt-2 alert alert-success" id="form_success"  role="alert"  style="font-weight: 500; font-size: 18px;">
+
+
+                <p class="success-message text-center mt-2 alert alert-success" id="form_success" role="alert"
+                  style="font-weight: 500; font-size: 18px;">
                   Your enquiry has been submitted successfully!
 
                 </p>
@@ -476,7 +563,8 @@
                   </div>
                   <div class="form-group text-light">
                     <label for="query" class="contact-form-title">Your message</label>
-                    <textarea class="form-control " id="formMsg" name="message" placeholder="Write your note..." rows="4"></textarea>
+                    <textarea class="form-control " id="formMsg" name="message" placeholder="Write your note..."
+                      rows="4"></textarea>
                     <p class="error-message" id="error-query">
                       Query must be filled out
                     </p>
@@ -495,7 +583,7 @@
   </section>
   <!-- contact-us  section end-->
 
-   <!-- footer section start -->
+  <!-- footer section start -->
   <section id="footer">
 
     <footer class="footer-img ">
@@ -620,79 +708,84 @@
       </div>
 
     </footer>
-  
+
 
   </section>
- 
 
 
-    <!--Javascript dependencies-->
-    <script src="./assets/js/jquery-v3.7.1.min.js"></script>
-    <script src="assets/js/noframework.waypoints.min.js" type="module"></script>
-    <script src="./assets/js/main.js" type="module"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/countUp.js" type="module"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+  <!--Javascript dependencies-->
+  <script src="./assets/js/jquery-v3.7.1.min.js"></script>
+  <script src="assets/js/noframework.waypoints.min.js" type="module"></script>
+  <script src="./assets/js/main.js" type="module"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/countUp.js" type="module"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="./assets/js/locomotive.js"></script>-->
-    <script>		
-      $("#emailFormSubmit").submit(function(event){
-          event.preventDefault();
-          var flag=validateMyForm();			
-          if(flag){	
-                  $(".mainLoder").show();
-                  $("#contact-button").attr('disabled',true);  	  	    
-                var formData=new FormData($(this)[0]);			   	
-               $.ajax({
-                 url: 'libraries/sendemail.php',
-                    type: 'POST',
-                    data: formData,            
-                    processData: false,
-                    contentType: false,
-                    success: function(data){
-                      var obj=$.parseJSON(data);
-                if(obj.message=="Success"){
-                  alert("Enquiry Send...!");
-                  $(".mainLoder").hide();
-                  $("#contact-button").attr('disabled',false); 						
-                  $("#emailFormSubmit input").val("");
-                  $("#emailFormSubmit textarea").val("");
-                }
-                else if(obj.message=="Require"){
-                  $(".mainLoder").hide();
-                  $("#contact-button").attr('disabled',false); 
-                  alert("All fields are required...!");
-                }
-                
-              },
-              error: function(error){
-                $(".mainLoder").hide();
-                $("#contact-button").attr('disabled',false);
-                alert("Error");
-                $(".mainLoder").hide();
-              }
-            });
-        }else{
-          alert("All fields required...!");
-        }			
+  <script>
+    $("#emailFormSubmit").submit(function (event) {
+      event.preventDefault();
+      var flag = validateMyForm();
+      if (flag) {
+        $(".mainLoder").show();
+        $("#contact-button").attr('disabled', true);
+        var formData = new FormData($(this)[0]);
+        $.ajax({
+          url: 'libraries/sendemail.php',
+          type: 'POST',
+          data: formData,
+          processData: false,
+          contentType: false,
+          success: function (data) {
+            var obj = $.parseJSON(data);
+            if (obj.message == "Success") {
+              alert("Enquiry Send...!");
+              $(".mainLoder").hide();
+              $("#contact-button").attr('disabled', false);
+              $("#emailFormSubmit input").val("");
+              $("#emailFormSubmit textarea").val("");
+            }
+            else if (obj.message == "Require") {
+              $(".mainLoder").hide();
+              $("#contact-button").attr('disabled', false);
+              alert("All fields are required...!");
+            }
+
+          },
+          error: function (error) {
+            $(".mainLoder").hide();
+            $("#contact-button").attr('disabled', false);
+            alert("Error");
+            $(".mainLoder").hide();
+          }
+        });
+      } else {
+        alert("All fields required...!");
+      }
     });
-    
-    function validateMyForm(){
-      var flag=true;
-      if($("#formName").val()==""){
-        flag=false;
+
+    function validateMyForm() {
+      var flag = true;
+      if ($("#formName").val() == "") {
+        flag = false;
       }
-      if($("#formEmail").val()==""){
-        flag=false;
-      }	
-      if($("#formMobile").val()==""){
-        flag=false;
+      if ($("#formEmail").val() == "") {
+        flag = false;
       }
-      if($("#formMsg").val()==""){
-        flag=false;
+      if ($("#formMobile").val() == "") {
+        flag = false;
       }
-    
+      if ($("#formMsg").val() == "") {
+        flag = false;
+      }
+
       return flag;
     }
-    </script>
+  </script>
 </body>
+
 </html>
