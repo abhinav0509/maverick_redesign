@@ -152,7 +152,6 @@ h1 {
     }
 
     #heroVideo{
-      
       min-width: 100%;
       min-height: 100%;
       z-index: 999;
@@ -394,6 +393,7 @@ h1 {
   animation: scroll-horizontal 20s linear infinite;
   animation-delay: 10s;
 }
+
 /* .logo-container{
   width: 300px;
   height: 300px;
@@ -446,13 +446,15 @@ h1 {
   z-index: 2000;
   height:300px;
 }
+
 #tech-stack #section-subtitle{
   color:black;
 }
 
 #testimonial{
   margin-bottom: 64px;
-  
+  overflow-x: hidden;
+   
 }
  
 
@@ -485,6 +487,9 @@ h1 {
 position: absolute;
 bottom:0%;
 left:70%;
+}
+.testimonial-card{
+  margin-top:24px;
 }
  
  #contact-us{
