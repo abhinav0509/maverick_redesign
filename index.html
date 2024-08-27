@@ -17,12 +17,24 @@
     <!-- <link rel="stylesheet" href="./assets/css/locomotive.css"> -->
     <title>Maverick Softwares-Web Development Agency Pune</title>
 </head> 
+<style>
+
+#preloader{
+  height:100vh;
+  width:100%;
+  background:#fff url("assets/video/Maverick-Software.gif") no-repeat center center;
+  z-index: 99999;
+  position: fixed;
+}
 
   
  </style>
 <body>
   <!-- <div class="minicircle"></div> -->
     <!--Header Section Start-->
+   <div id="preloader">
+      
+   </div>
    
     <header id="header-container" class="mt-4">
         <div class="container main_header_in d-flex justify-content-between">
@@ -757,6 +769,18 @@
     
     <script>
     new WOW().init();
+    </script>
+
+    <script>
+      var loader=document.getElementById('preloader');
+      window.addEventListener('load',function(){
+
+        const myTimeout=setTimeout(function(){
+          loader.style.display="none";
+        },2500)
+        
+       
+      });
     </script>
 
     <!-- Initialize Swiper -->
